@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aurangabad Gaming</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#020617;
+padding:18px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:16px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url("banner.jpg") no-repeat center center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+.hero *{
+position:relative;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+letter-spacing:2px;
+text-transform:uppercase;
+text-shadow:0 0 20px #38bdf8;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.9;
+}
+
+/* CONTENT */
+.content-section{
+padding:140px 60px;
+display:flex;
+justify-content:center;
+}
+
+.content-box{
+max-width:1100px;
+width:100%;
+background:#1e293b;
+padding:60px 70px;
+border-radius:16px;
+box-shadow:0 0 30px rgba(0,0,0,0.4);
+text-align:left;
+}
+
+.content-box h1{
+font-size:42px;
+margin-bottom:30px;
+}
+
+.content-box p{
+font-size:18px;
+line-height:1.9;
+margin-bottom:20px;
+opacity:0.9;
+}
+
+/* FEATURE GRID */
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.feature{
+background:#0f172a;
+padding:25px;
+border-radius:12px;
+font-size:17px;
+}
+
+/* STORE */
+section{
+padding:120px 40px;
+text-align:center;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+width:300px;
+border-radius:12px;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.price{
+font-size:28px;
+color:gold;
+margin:15px 0;
+}
+
+/* CONTACT */
+.contact input,
+.contact textarea{
+padding:12px;
+margin:10px;
+width:300px;
+border-radius:6px;
+border:none;
+}
+
+/* FOOTER */
+footer{
+background:#020617;
+padding:50px;
+text-align:center;
+margin-top:60px;
+}
+
+footer a{
+color:gold;
+margin:0 15px;
+text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div class="logo">Aurangabad Gaming</div>
+<ul>
+<li><a href="#channel">About</a></li>
+<li><a href="#server">Server</a></li>
+<li><a href="#store">Store</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Welcome to Aurangabad Gaming</h1>
+<p>Minecraft Survival Server + YouTube Community</p>
+<p><strong>Server IP: play.aurangabadgaming.online</strong></p>
+</section>
+
+<!-- ABOUT -->
+<section id="channel" class="content-section">
+<div class="content-box">
+
+<h1>About Aurangabad Gaming</h1>
+
+<p>
+Aurangabad Gaming is a channel formed with a vision to strengthen the gaming
+community in Aurangabad, Maharashtra. Our goal is to expand and unite gamers
+through competitive and community-driven gameplay across multiple games.
+</p>
+
+<p>
+We focus on building a strong gaming ecosystem for popular games like
+<strong>Minecraft</strong>, <strong>Mortal Kombat</strong>,
+<strong>Valorant</strong>, <strong>BGMI</strong>, and more.
+Through gameplay, events, and community interaction, we aim to grow one of
+the strongest gaming communities in the region.
+</p>
+
+<h2>Follow Us</h2>
+
+<p>
+📺 YouTube Shorts:
+<a href="https://www.youtube.com/@AurangabadGamingShorts" target="_blank">Aurangabad Gaming Shorts</a>
+</p>
+
+<p>
+🎥 YouTube Streaming:
+<a href="https://www.youtube.com/@Aurangabad-Gaming20" target="_blank">Aurangabad Gaming Streams</a>
+</p>
+
+<p>
+📸 Instagram:
+<a href="https://instagram.com/aurangabad_gaming_20" target="_blank">@aurangabad_gaming_20</a>
+</p>
+
+</div>
+</section>
+
+<!-- SERVER INFO -->
+<section id="server" class="content-section">
+<div class="content-box">
+<h1>Server Features</h1>
+
+<div class="feature-grid">
+<div class="feature">🌍 Claim lands and build your empire</div>
+<div class="feature">🏛 Create nations and alliances</div>
+<div class="feature">💼 Earn money with jobs</div>
+<div class="feature">💰 Auction items to other players</div>
+<div class="feature">⚔ Unique survival experience</div>
+</div>
+
+<h2 style="margin-top:40px;">Server Rules</h2>
+<p>🚫 No griefing or destroying others' builds</p>
+<p>🚫 Strictly no abuse or toxic behaviour</p>
+<p>🤝 Respectful gameplay and fair competition</p>
+<p>⚖ Admin decisions are final</p>
+<p>🎮 Play fair and enjoy the community</p>
+
+</div>
+</section>
+
+<!-- STORE -->
+<section id="store">
+<h1>Buy Ranks</h1>
+
+<div class="container">
+
+<div class="card">
+<h2>VIP</h2>
+<div class="price">₹500</div>
+<p>✔ +20 extra land chunks</p>
+<p>✔ ₹10,000 in-game money</p>
+<p>✔ VIP Tag</p>
+<p>✔ Blue chat color</p>
+</div>
+
+<div class="card">
+<h2>Fleet Army</h2>
+<div class="price">₹250</div>
+<p>✔ Strength effect</p>
+<p>✔ ₹1,000 in-game money</p>
+<p>✔ Fleet Army Tag</p>
+<p>✔ Gold chat color</p>
+</div>
+
+<div class="card">
+<h2>Pie Gang</h2>
+<div class="price">₹250</div>
+<p>✔ Slow falling effect</p>
+<p>✔ ₹1,000 in-game money</p>
+<p>✔ Pie Gang Tag</p>
+<p>✔ Green chat color</p>
+</div>
+
+<div class="card">
+<h2>Aurangabadi</h2>
+<div class="price">₹1000</div>
+<p>✔ +50 extra land chunks</p>
+<p>✔ ₹100,000 in-game money</p>
+<p>✔ Aurangabadi Tag</p>
+<p>✔ Purple chat color</p>
+</div>
+
+</div>
+
+<!-- COMMON STORE BUTTON -->
+<div style="margin-top:40px;">
+<a href="https://store.aurangabadgaming.online/" target="_blank">
+<button style="
+background:#2563eb;
+color:white;
+font-weight:bold;
+padding:15px 40px;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+border:none;
+">
+Go to Store & Buy Ranks
+</button>
+</a>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h1>Contact Us</h1>
+<input placeholder="Your Name"><br>
+<input placeholder="Your Email"><br>
+<textarea placeholder="Message"></textarea><br>
+<button>Send Message</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>Follow Aurangabad Gaming</p>
+<br>
+
+<a href="https://www.youtube.com/@AurangabadGamingShorts" target="_blank">
+YouTube Shorts
+</a>
+
+<a href="https://www.youtube.com/@Aurangabad-Gaming20" target="_blank">
+YouTube Streaming
+</a>
+
+<a href="https://instagram.com/aurangabad_gaming_20" target="_blank">
+Instagram
+</a>
+
+<a href="#" onclick="alert('Join our Discord: aurangabad_gaming')">
+Discord
+</a>
+
+<p style="margin-top:20px;">© 2026 Aurangabad Gaming</p>
+</footer>
+
+</body>
+</html>
