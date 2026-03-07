@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGMI India Hub | Download, UC & Tips - Aurangabad Gaming</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3568278140104674" crossorigin="anonymous"></script>
+
+    <meta name="description" content="The ultimate BGMI resource for Indian gamers. Get download links, best sensitivity settings, and UC purchase guides. Join Aurangabad Gaming for BGMI tournaments.">
+    <meta name="keywords" content="BGMI Download APK India, BGMI UC Purchase Official, BGMI Best Sensitivity Settings 2026, BGMI Lag Fix for Low End Devices, Aurangabad Gaming BGMI Tournament, BGMI Latest Update News">
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --accent: #fbbf24;
+            --bg: #020617;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --bgmi-orange: #ffa500;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+            overflow-x: hidden;
+        }
+
+        /* REUSABLE NAV BAR */
+        nav {
+            background: rgba(2, 6, 23, 0.9);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 90%;
+            z-index: 2000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo-btn img { height: 50px; transition: transform 0.3s; }
+        .logo-btn:hover img { transform: scale(1.1); }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s ease;
+            padding: 8px 0;
+            border-bottom: none !important;
+        }
+
+        .nav-links li a:hover,
+        .dropdown:hover .dropbtn {
+            color: var(--accent) !important;
+            text-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+            border-bottom: none !important;
+        }
+
+        /* DROPDOWN LOGIC - INSTANT */
+        .dropdown { position: relative; padding: 10px 0; }
+        .dropdown::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            bottom: -25px;
+            left: 0;
+        }
+
+        .drop-content {
+            display: none;
+            position: absolute;
+            background: var(--card-bg);
+            min-width: 180px;
+            border-radius: 8px;
+            top: 45px;
+            border: 1px solid #334155;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            z-index: 2100;
+            overflow: hidden;
+        }
+
+        .drop-content a {
+            display: block;
+            padding: 12px 16px;
+            border-bottom: 1px solid #334155;
+            text-decoration: none;
+            color: white !important;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .drop-content a:last-child { border-bottom: none; }
+        .drop-content a:hover { background: #2d3748 !important; color: var(--accent) !important; }
+        .dropdown:hover .drop-content { display: block; }
+
+        /* HERO SECTION */
+        section { padding: 40px 10%; position: relative; z-index: 1; }
+        .bgmi-header { text-align: center; margin-bottom: 40px; }
+        .bgmi-header h1 { font-size: 3rem; color: var(--bgmi-orange); margin-bottom: 10px; }
+
+        /* IMAGE GALLERY */
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0; }
+        .image-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid #334155;
+            transition: transform 0.3s;
+        }
+        .image-grid img:hover { transform: scale(1.02); }
+
+        /* CONTENT BOXES */
+        .content-box { background: var(--card-bg); padding: 30px; border-radius: 20px; border: 1px solid #334155; margin-bottom: 30px; }
+        .content-box h2 { color: var(--bgmi-orange); border-left: 4px solid var(--bgmi-orange); padding-left: 15px; }
+
+        .btn-bgmi { background: var(--bgmi-orange); color: white; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; margin: 10px 5px; transition: 0.3s; }
+        .btn-bgmi:hover { background: #e69500; transform: translateY(-2px); }
+
+        /* FOOTER */
+        footer { background: #010409; padding: 50px 10%; border-top: 1px solid #334155; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 40px; }
+        .footer-col h4 { color: var(--accent); margin-bottom: 20px; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col a { color: #94a3b8; text-decoration: none; transition: 0.3s; border-bottom: none !important; }
+        .footer-col a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="logo-btn"><img src="/assets/images/logo.jpg" alt="Logo"></a>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/servers/">Servers</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Games ▼</a>
+            <div class="drop-content">
+                <a href="/games/minecraft/">Minecraft</a>
+                <a href="/games/valorant/">Valorant</a>
+                <a href="/games/bgmi/">BGMI</a>
+                <a href="/games/mortal-kombat/">Mortal Kombat</a>
+            </div>
+        </li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+    </ul>
+</nav>
+
+<section>
+    <div class="bgmi-header">
+        <h1>BGMI India Hub</h1>
+        <p>India's most popular Battle Royale experience is here.</p>
+    </div>
+
+    <div class="image-grid">
+        <img src="/assets/images/bgmi.jpg" alt="BGMI Poster">
+        <img src="/assets/images/bgmi1.jpg" alt="BGMI Gameplay">
+        <img src="/assets/images/bgmi2.jpg" alt="BGMI Squad">
+    </div>
+
+    <div class="content-box">
+        <h2>About BGMI</h2>
+        <p>Battlegrounds Mobile India (BGMI) is the premier battle royale game specifically for the Indian market. Developed by Krafton, it offers various game modes including Classic, Team Deathmatch, and specialized events. At Aurangabad Gaming, we track the latest metas and help players optimize their sensitivity for the perfect chicken dinner.</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Download & Official Links</h2>
+        <p>Ensure you are downloading the official version to keep your account safe.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.pubg.imobile" target="_blank" class="btn-bgmi">Get it on Google Play</a>
+        <a href="https://www.battlegroundsmobileindia.com/" target="_blank" class="btn-bgmi" style="background:#555;">Official Website</a>
+    </div>
+
+    <div class="content-box">
+        <h2>Pro Tips for BGMI</h2>
+        <ul>
+            <li><strong>Gyroscope:</strong> Always use 'Always On' Gyro for better recoil control in long-range sprays.</li>
+            <li><strong>Sound:</strong> Use high-quality wired earphones to hear enemy footsteps clearly.</li>
+            <li><strong>Graphics:</strong> Keep Graphics on 'Smooth' and Frame Rate on the highest possible (Extreme/90FPS) for a competitive edge.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-col">
+        <h4>Aurangabad Gaming</h4>
+        <p>Your one-stop destination for Indian esports and Minecraft community gaming.</p>
+    </div>
+    <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="/games/valorant/">Valorant Hub</a></li>
+            <li><a href="/servers/">Minecraft SMP</a></li>
+            <li><a href="/about/">About Us</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

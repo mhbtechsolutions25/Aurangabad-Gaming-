@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aurangabad Gaming</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3568278140104674" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --accent: #fbbf24;
+            --bg: #020617;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+            overflow-x: hidden;
+        }
+
+        /* CORRECT UNIFIED NAV BAR */
+        nav {
+            background: rgba(2, 6, 23, 0.9);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 90%;
+            z-index: 2000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo-btn img { height: 50px; transition: transform 0.3s; }
+        .logo-btn:hover img { transform: scale(1.1); }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            color: #ffffff;
+            text-decoration: none !important;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s ease;
+            padding: 8px 0;
+            border-bottom: none !important;
+        }
+
+        .nav-links li a:hover,
+        .dropdown:hover .dropbtn {
+            color: var(--accent) !important;
+            border-bottom: none !important;
+        }
+
+        /* INSTANT DROPDOWN */
+        .dropdown { position: relative; padding: 10px 0; }
+        .dropdown::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            bottom: -25px;
+            left: 0;
+        }
+
+        .drop-content {
+            display: none;
+            position: absolute;
+            background: var(--card-bg);
+            min-width: 180px;
+            border-radius: 8px;
+            top: 45px;
+            border: 1px solid #334155;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            z-index: 2100;
+            overflow: hidden;
+        }
+
+        .drop-content a {
+            display: block;
+            padding: 12px 16px;
+            border-bottom: 1px solid #334155;
+            text-decoration: none !important;
+            color: white !important;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .drop-content a:last-child { border-bottom: none; }
+        .drop-content a:hover { background: #2d3748 !important; color: var(--accent) !important; }
+        .dropdown:hover .drop-content { display: block; }
+
+        /* CONTACT FORM CONTENT */
+        section { padding: 60px 10%; display: flex; justify-content: center; }
+
+        .contact-container {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #334155;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .contact-container h1 { color: var(--accent); text-align: center; margin-bottom: 10px; }
+        .contact-container p { text-align: center; color: #94a3b8; margin-bottom: 30px; }
+
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: 600; color: #cbd5e1; }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            color: white;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #010409;
+            padding: 50px 10%;
+            border-top: 1px solid #334155;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .footer-col h4 { color: var(--accent); margin-bottom: 20px; }
+        .footer-col a { color: #94a3b8; text-decoration: none !important; border-bottom: none !important; transition: 0.3s; }
+        .footer-col a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="logo-btn"><img src="/assets/images/logo.png" alt="Aurangabad Gaming"></a>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/servers/">Servers</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Games ▼</a>
+            <div class="drop-content">
+                <a href="/games/minecraft/">Minecraft</a>
+                <a href="/games/valorant/">Valorant</a>
+                <a href="/games/bgmi/">BGMI</a>
+                <a href="/games/mortal-kombat/">Mortal Kombat</a>
+            </div>
+        </li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+    </ul>
+</nav>
+
+<section>
+    <div class="contact-container">
+        <h1>Get in Touch</h1>
+        <p>Send a message directly to Aurangabad Gaming. We'll get back to you soon!</p>
+
+        <form action="https://formspree.io/f/aurangabadgaming20@gmail.com" method="POST">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="_replyto" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="5" placeholder="What can we help you with?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-col">
+        <h4>Aurangabad Gaming</h4>
+        <p>Building the gaming community in Aurangabad and scaling to national levels.</p>
+    </div>
+    <div class="footer-col">
+        <h4>Sitemap</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Official Email</h4>
+        <p>aurangabadgaming20@gmail.com</p>
+    </div>
+</footer>
+
+</body>
+</html>

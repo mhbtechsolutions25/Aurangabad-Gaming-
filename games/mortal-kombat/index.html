@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortal Kombat Story & Timeline | Aurangabad Gaming</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3568278140104674" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Explore the full story of Mortal Kombat 9, X, 11, and 1. Get download links and lore details for the NRS timeline.">
+    <meta name="keywords" content="Mortal Kombat 1 Story Summary, MK9 Timeline Explained, MKX Download PC, MK11 Aftermath Lore, Mortal Kombat 1 2023 Download, Aurangabad Gaming MK Hub">
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --accent: #fbbf24;
+            --bg: #020617;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --mk-gold: #d4af37;
+            --mk-red: #b91c1c;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+            overflow-x: hidden;
+        }
+
+        /* REUSABLE NAV BAR */
+        nav {
+            background: rgba(2, 6, 23, 0.9);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 90%;
+            z-index: 2000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo-btn img { height: 50px; transition: transform 0.3s; }
+        .logo-btn:hover img { transform: scale(1.1); }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s ease;
+            padding: 8px 0;
+            border-bottom: none !important;
+        }
+
+        .nav-links li a:hover,
+        .dropdown:hover .dropbtn {
+            color: var(--accent) !important;
+            text-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+            border-bottom: none !important;
+        }
+
+        /* DROPDOWN LOGIC */
+        .dropdown { position: relative; padding: 10px 0; }
+        .dropdown::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            bottom: -25px;
+            left: 0;
+        }
+
+        .drop-content {
+            display: none;
+            position: absolute;
+            background: var(--card-bg);
+            min-width: 180px;
+            border-radius: 8px;
+            top: 45px;
+            border: 1px solid #334155;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            z-index: 2100;
+            overflow: hidden;
+        }
+
+        .drop-content a {
+            display: block;
+            padding: 12px 16px;
+            border-bottom: 1px solid #334155;
+            text-decoration: none;
+            color: white !important;
+            font-size: 14px;
+        }
+
+        .drop-content a:last-child { border-bottom: none; }
+        .drop-content a:hover { background: #2d3748 !important; color: var(--accent) !important; }
+        .dropdown:hover .drop-content { display: block; }
+
+        /* AUTOMATIC SCROLLING GALLERY */
+        .slider-mk {
+            width: 100%;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            margin: 40px 0;
+            background: #000;
+            border-top: 1px solid #334155;
+            border-bottom: 1px solid #334155;
+        }
+
+        .slide-track-mk {
+            display: flex;
+            width: calc(300px * 16);
+            animation: scrollMK 30s linear infinite;
+        }
+
+        .scroll-item {
+            flex: 0 0 300px;
+            height: 250px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .scroll-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid var(--mk-gold);
+        }
+
+        .scroll-item span {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: var(--mk-gold);
+            font-weight: bold;
+        }
+
+        @keyframes scrollMK {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-300px * 8)); }
+        }
+
+        .slider-mk:hover .slide-track-mk {
+            animation-play-state: paused;
+        }
+
+        /* STORY SECTIONS */
+        section { padding: 40px 10%; position: relative; z-index: 1; }
+        .header-main { text-align: center; margin-bottom: 40px; }
+        .header-main h1 { font-size: 3rem; color: var(--mk-gold); margin-bottom: 10px; }
+
+        .story-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #334155;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--mk-gold);
+        }
+        .story-card h2 { color: var(--mk-gold); margin-top: 0; }
+        .story-card p { line-height: 1.7; color: #cbd5e1; }
+
+        /* DOWNLOAD BUTTONS */
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .dl-btn {
+            background: var(--mk-red);
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .dl-btn:hover { background: #ef4444; transform: translateY(-3px); }
+
+        /* FOOTER */
+        footer {
+            background: #010409;
+            padding: 50px 10%;
+            border-top: 1px solid #334155;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .footer-col h4 { color: var(--accent); margin-bottom: 20px; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col a { color: #94a3b8; text-decoration: none; transition: 0.3s; border-bottom: none !important; }
+        .footer-col a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="logo-btn"><img src="/assets/images/logo.png" alt="Aurangabad Gaming Logo"></a>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/servers/">Servers</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Games ▼</a>
+            <div class="drop-content">
+                <a href="/games/minecraft/">Minecraft</a>
+                <a href="/games/valorant/">Valorant</a>
+                <a href="/games/bgmi/">BGMI</a>
+                <a href="/games/mortal-kombat/">Mortal Kombat</a>
+            </div>
+        </li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+    </ul>
+</nav>
+
+<section>
+    <div class="header-main">
+        <h1>The Mortal Kombat Saga</h1>
+        <p>A journey through the bloodiest timeline in gaming history.</p>
+    </div>
+
+    <div class="slider-mk">
+        <div class="slide-track-mk">
+            <div class="scroll-item"><img src="/assets/images/mk.jpg" alt="MK9"><span>MK9: The Beginning</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk1.jpg" alt="MK9"><span>MK9: Raiden's Vision</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk2.jpg" alt="MKX"><span>MKX: Next Gen</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk3.jpg" alt="MKX"><span>MKX: Shinnok's War</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk4.jpg" alt="MK11"><span>MK11: Time Clash</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk5.jpg" alt="MK11"><span>MK11: Fire God Raiden</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk6.jpg" alt="MK1"><span>MK1: New Era</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk7.jpg" alt="MK1"><span>MK1: Liu Kang's World</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk.jpg" alt="MK9"><span>MK9: The Beginning</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk1.jpg" alt="MK9"><span>MK9: Raiden's Vision</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk2.jpg" alt="MKX"><span>MKX: Next Gen</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk3.jpg" alt="MKX"><span>MKX: Shinnok's War</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk4.jpg" alt="MK11"><span>MK11: Time Clash</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk5.jpg" alt="MK11"><span>MK11: Fire God Raiden</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk6.jpg" alt="MK1"><span>MK1: New Era</span></div>
+            <div class="scroll-item"><img src="/assets/images/mk7.jpg" alt="MK1"><span>MK1: Liu Kang's World</span></div>
+        </div>
+    </div>
+
+    <div class="story-card">
+        <h2>Mortal Kombat 9 (2011)</h2>
+        <p>The story begins at the end of Armageddon. Raiden, about to be killed by Shao Kahn, sends a message to his past self: "He must win." The timeline resets to the original tournament. Raiden tries to change the future, but at a heavy cost—most of Earthrealm's defenders are killed by Sindel, leaving only a few survivors to face the threat.</p>
+    </div>
+
+    <div class="story-card">
+        <h2>Mortal Kombat X (2015)</h2>
+        <p>Set 25 years after MK9, a new generation of fighters (Cassie Cage, Jacqui Briggs, etc.) leads the charge. The fallen Elder God Shinnok returns to corrupt the Jinsei (Earth's life force). The story explores the friction between Outworld's new ruler, Kotal Kahn, and the Special Forces of Earthrealm.</p>
+    </div>
+
+    <div class="story-card">
+        <h2>Mortal Kombat 11 (2019)</h2>
+        <p>Kronika, the Keeper of Time, is furious with Raiden for upsetting the balance. She merges the past and present timelines, bringing young versions of the characters face-to-face with their older selves. The saga ends with Fire God Liu Kang defeating Kronika and gaining the power to restart time from the very beginning.</p>
+    </div>
+
+    <div class="story-card">
+        <h2>Mortal Kombat 1 (2023)</h2>
+        <p>Welcome to a New Era. Fire God Liu Kang has crafted a peaceful universe where old enemies are now allies. Sub-Zero and Scorpion are brothers, and Mileena is a beloved princess. However, a mysterious threat from a parallel timeline emerges, forcing Liu Kang to gather his champions once more in a battle for all of reality.</p>
+    </div>
+
+    <div class="header-main">
+        <h2>Get the Games</h2>
+    </div>
+    <div class="download-grid">
+        <a href="https://store.steampowered.com/app/207010/" target="_blank" class="dl-btn">MK9 (Steam)</a>
+        <a href="https://store.steampowered.com/app/307780/" target="_blank" class="dl-btn">MKX (Steam)</a>
+        <a href="https://store.steampowered.com/app/976310/" target="_blank" class="dl-btn">MK11 (Steam)</a>
+        <a href="https://store.steampowered.com/app/1971870/" target="_blank" class="dl-btn">MK1 (Steam)</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-col">
+        <h4>Aurangabad Gaming</h4>
+        <p>Your ultimate source for gaming lore, SMP servers, and viral content.</p>
+    </div>
+    <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="/games/minecraft/">Minecraft</a></li>
+            <li><a href="/games/valorant/">Valorant</a></li>
+            <li><a href="/about/">About Us</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

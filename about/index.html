@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Vision & Mission - Aurangabad Gaming</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3568278140104674" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --accent: #fbbf24;
+            --bg: #020617;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            /* Platform Colors */
+            --youtube: #ff0000;
+            --instagram: #e1306c;
+            --discord: #5865f2;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding-top: 80px;
+            line-height: 1.6;
+        }
+
+        /* REUSABLE NAV BAR */
+        nav {
+            background: rgba(2, 6, 23, 0.9);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 90%;
+            z-index: 2000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo-btn img { height: 50px; transition: transform 0.3s; }
+        .logo-btn:hover img { transform: scale(1.1); }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s;
+            border-bottom: none !important;
+        }
+
+        .nav-links li a:hover { color: var(--accent) !important; }
+
+        /* DROPDOWN */
+        .dropdown { position: relative; padding: 10px 0; }
+        .drop-content {
+            display: none;
+            position: absolute;
+            background: var(--card-bg);
+            min-width: 180px;
+            border-radius: 8px;
+            top: 45px;
+            border: 1px solid #334155;
+            z-index: 2100;
+        }
+        .drop-content a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: white !important;
+        }
+        .dropdown:hover .drop-content { display: block; }
+
+        /* ABOUT CONTENT */
+        section { padding: 60px 10%; }
+        .about-header { text-align: center; margin-bottom: 50px; }
+        .about-header h1 { font-size: 3rem; color: var(--accent); }
+
+        .vision-box {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #334155;
+            margin-bottom: 60px;
+            border-left: 5px solid var(--primary);
+        }
+
+        h2 { color: var(--accent); margin-top: 0; text-align: center; margin-bottom: 30px;}
+        p { color: #cbd5e1; font-size: 1.1rem; }
+
+        /* LINKS GRID & BUTTONS */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .link-card {
+            background: #0f172a;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.3s;
+        }
+        .link-card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        .link-card h3 { margin: 10px 0; font-size: 1.4rem; color: #fff; }
+        .link-card p { font-size: 0.95rem; margin-bottom: 20px; }
+
+        /* Action Buttons */
+        .btn-link {
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .btn-yt { background: var(--youtube); }
+        .btn-yt:hover { background: #cc0000; box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); }
+
+        .btn-ig { background: var(--instagram); }
+        .btn-ig:hover { background: #c13584; box-shadow: 0 0 15px rgba(225, 48, 108, 0.4); }
+
+        .btn-ds { background: var(--discord); }
+        .btn-ds:hover { background: #4752c4; box-shadow: 0 0 15px rgba(88, 101, 242, 0.4); }
+
+        /* FOOTER */
+        footer { background: #010409; padding: 50px 10%; border-top: 1px solid #334155; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
+        .footer-col a { color: #94a3b8; text-decoration: none; border-bottom: none !important; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="logo-btn"><img src="/assets/images/logo.png" alt="Aurangabad Gaming"></a>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/servers/">Servers</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Games ▼</a>
+            <div class="drop-content">
+                <a href="/games/minecraft/">Minecraft</a>
+                <a href="/games/valorant/">Valorant</a>
+                <a href="/games/bgmi/">BGMI</a>
+                <a href="/games/mortal-kombat/">Mortal Kombat</a>
+            </div>
+        </li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+    </ul>
+</nav>
+
+<section>
+    <div class="about-header">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="vision-box">
+        <p>
+            <strong>Aurangabad Gaming</strong> is a YouTube channel and community initiative built to encourage and bring up the gaming culture in our city. Our vision is to build the local gaming community and scale up to a national level.
+        </p>
+        <p>
+            We are on a mission to expand the gaming culture beyond mobile games like BGMI, introducing players to the high-performance world of PC and Console gaming, including titles like <strong>Valorant, Minecraft, Mortal Kombat, and GTA.</strong>
+        </p>
+    </div>
+
+    <h2>Join the Revolution</h2>
+
+    <div class="links-grid">
+        <div class="link-card">
+            <h3>Main Channel</h3>
+            <p>Our home for long-form gameplay, in-depth reviews, and massive community projects.</p>
+            <a href="https://www.youtube.com/@Aurangabad-Gaming20" target="_blank" class="btn-link btn-yt">Subscribe Now</a>
+        </div>
+
+        <div class="link-card">
+            <h3>Shorts Channel</h3>
+            <p>Daily "Fun Facts," mysterious lore, and quick viral gaming highlights.</p>
+            <a href="https://www.youtube.com/@AurangabadGamingshorts" target="_blank" class="btn-link btn-yt">Watch Shorts</a>
+        </div>
+
+        <div class="link-card">
+            <h3>Instagram</h3>
+            <p>Behind-the-scenes content, community polls, and daily gaming news updates.</p>
+            <a href="https://instagram.com/aurangabad_gaming_20" target="_blank" class="btn-link btn-ig">Follow Us</a>
+        </div>
+
+        <div class="link-card">
+            <h3>Discord</h3>
+            <p>The heart of our community. Find your next squad and chat with us directly.</p>
+            <a href="https://discord.gg/9WtZX3PGEz" target="_blank" class="btn-link btn-ds">Join Server</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-col">
+        <h4>Aurangabad Gaming</h4>
+        <p>Scaling Indian gaming culture to the next level.</p>
+    </div>
+    <div class="footer-col">
+        <h4>Sitemap</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/games/minecraft/">Minecraft</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
